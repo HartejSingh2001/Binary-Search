@@ -1,3 +1,25 @@
+// Best method
+    for(i=low;i<=high;i++)
+    {
+        mid=(low+high)/2;
+        if(arr[mid]<key)
+        {
+            low=mid+1;
+        }
+        else if(arr[mid]>key)
+        {
+            high=mid-1;
+        }
+        else if(arr[mid]==key)
+        {
+            cout<<"Element found ::";
+            flag=1;
+            break;
+        }
+    }
+// end
+
+// Method 2
 class Solution{
 public:
     int binarysearch(int arr[], int n, int k){
